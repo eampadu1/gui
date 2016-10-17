@@ -1,2 +1,52 @@
-# gui
-Course Projects
+GRAPHICAL USER INTERFACE
+=========================
+
+A personal website developed to fulfill the requirements of the course.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
