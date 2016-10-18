@@ -1,0 +1,137 @@
+header, hgroup, nav, footer, figure, figcaption, aside, section, article,div {
+	display: block;
+}
+
+
+body {
+    width:80%;
+	background-image: url("ptrbackground.jpg");
+    background-repeat: repeat-x;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+    border: 0px;
+    margin: auto;
+    background-color: #90c8e3;  
+}
+
+
+ #wrapper {    
+    width: 80%;
+    margin: auto;
+    background-color: white;
+}
+
+#content {
+    width:100%-180px;
+    height: 600px;
+    padding-left: 190px;
+    background-color: #white;
+    clear:right;
+}
+
+img{
+    float: left;    
+    display: inline;
+}
+
+
+#content ul{
+list-style-image:url('marker.gif');
+    list-style-position: inside;
+    margin-left: 10px;
+}
+
+header {
+    background-color: black;
+    background-image:url("sunset.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    font-size: 1.2em;
+    width: 20%;
+    
+}
+
+nav{
+    float: left;
+    width: 190px;
+    height: 600px;
+    background-color: #90c8e3;
+    vertical-align: baseline;
+    margin-bottom: 0px;
+    
+}
+
+li a {
+        
+   text-decoration: none;
+    color: black;
+    font-weight: bold;
+    width: 60px;
+    display: block;
+}
+
+nav a:visited {
+	color: #344873;
+    text-decoration: none;
+}
+
+nav a:hover {
+	color: #FFFFFF;
+    text-decoration: none;
+}
+ 
+
+h2 #content {
+    margin: 0px;
+    background-color: white;
+}
+
+p{
+    background-color: white;
+}
+h1 {
+	margin-bottom: 0;
+	padding: 10px;
+     
+}
+
+h2 {
+	color: #3399CC;
+}
+
+h1,h2 {
+	font-family: Georgia, "Times New Roman", serif;
+}
+
+#contact {
+	font-size: 90%;
+    padding-bottom: 20px;
+    
+}
+
+dt {
+	color: #000033;
+}
+
+footer {
+	font-family: Georgia, "Times New Roman", serif;
+    border-left: 190px;
+    padding-left: 190px;
+   
+    font-size: 70%;
+    font-style: italic;   
+    background-color: white;
+     border-left-color:  #90c8e3;
+
+}
+
+.resort {
+    color:cornflowerblue;
+    font-weight: bold;
+    text-align: center;
+}
