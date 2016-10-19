@@ -1,7 +1,7 @@
 # Graphical User Interface 
 
 **Assignment 5 Complete**.
-Folders Contain
+Folders Contain:
 
 html
 
