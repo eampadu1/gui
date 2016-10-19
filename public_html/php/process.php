@@ -1,5 +1,8 @@
 <DOCTYPE !html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
 <body style="background-color:cyan; color:"black; text-align:center; font-family: "Courier New",Arial;">
 <?php
 $NAME= $_POST["name"];
