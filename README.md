@@ -1,10 +1,14 @@
 # Graphical User Interface 
 
-Assignment 5.
-Folders consist of:
+**Assignment 5 Complete**.
+Folders Contain
+
 html
+
 css
+
 js
+
 php
 
 Please, understand that this site is still **under construction**.
