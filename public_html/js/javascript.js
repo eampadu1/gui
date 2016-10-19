@@ -1,1 +1,1 @@
-alert('Welcome To My Homepage. <br>Enjoy the Site!');
+alert('Welcome To My Homepage. Enjoy the Site!');
