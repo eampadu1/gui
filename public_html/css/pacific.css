@@ -1,3 +1,9 @@
+/*
+**Author: Ebenezer Ampadu
+**Program: pacific.css
+**Description: Style sheet for pacific assignment
+*/
+
 header, hgroup, nav, footer, figure, figcaption, aside, section, article,div {
 	display: block;
 }
