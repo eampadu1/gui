@@ -1,7 +1,9 @@
 # Graphical User Interface 
 =======================================================
 Author: Ebenezer Ampadu
+
 Course: Graphical User Interface I
+
 Fall 2016
 ======================================================
 
