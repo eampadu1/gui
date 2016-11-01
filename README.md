@@ -25,10 +25,13 @@ You may access the website from here: [Ebenezer's Homepage](https://eampadu1.git
 
 
 **Assignment 6 Complete**.
+
 Added:
 
 2 files:
+
 assignment_6.html
+
 assign6.js
 
 Assignment 6 can be accessed from homepage.
