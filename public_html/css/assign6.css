@@ -1,0 +1,104 @@
+/*
+**Author: Ebenezer Ampadu
+**Program: assign6.css
+**Fall 2016
+**Description: style sheet for Assignment 6
+*/
+
+/*Body styling*/
+body {
+display: block;
+background-color: cyan;
+}
+
+/*Date Styling*/
+#date {
+font-family: "Courier New";
+position: absolute;
+top: 0;
+right: 0;
+color: blue;
+}
+
+/*Styling for form for multiplication table*/
+#iform {
+border-top: 80px;
+border-bottom:10px;
+margin-top: 80px;
+padding-left: 20px;
+}
+
+/*Styling for header of multiplication table*/
+#multTitle {
+border-top: 80px;
+margin-top: 80px;
+text-align: center;
+font-family: "Helvetica";
+font-weight: bold;
+}
+
+/*First input box styling*/
+#t_row_start {
+margin-left: 30px;
+}
+
+/*Second input box styling*/
+#t_row_end {
+margin-left: 35px;
+}
+
+/*Third input box styling*/
+#t_col_start {
+margin-left: 49px;
+}
+
+/*Last input box styling*/
+#t_col_end{
+margin-left: 53px;
+}
+
+/*Submit button styling*/
+button {
+margin-left: 180px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+/*Multiplication Table styling*/
+#multTable {
+margin-top: 40px;
+border: 2px solid black;
+margin-left: auto;
+margin-right:auto;
+}
+
+/*Row styling for multiplication table*/
+tr {
+border: 1px solid black;
+}
+
+/*Cell styling for multiplication table*/
+td {
+border: 1px solid black;
+
+}
+
+/*Coloring the boxes of the multiplication table*/
+td:nth-child(2n) {
+background-color: black;
+color: white;
+}
+
+tr:nth-child(2n) {
+background-color: black;
+color: white;
+}
+/* End of style sheet*/
+
+
+
+
+
+
+
+
