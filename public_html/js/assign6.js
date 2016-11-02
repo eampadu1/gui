@@ -69,14 +69,12 @@ var row_diff = row_end - row_start+1;
 var col_diff = col_end - col_start+1;
 
 var items = new Array(row_diff);
-var i;
-var j;
 
-for (i = 0; i <= row_diff; i = i + 1) {
+for (var i = 0; i <= row_diff; i = i + 1) {
 items[i] = new Array(col_diff);
 items[i] = mTable.insertRow(i);
  
- for (j=0; j <= col_diff; j = j + 1) {
+ for (var j=0; j <= col_diff; j = j + 1) {
   items[i][j] = items[i].insertCell(j);
 
   items[0][0].innerHTML = " ";
