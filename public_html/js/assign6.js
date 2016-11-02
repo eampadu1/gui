@@ -15,23 +15,43 @@ var row_start = document.getElementById("t_col_start").value;
 var row_end = document.getElementById("t_col_end").value;
 
 /*Input Validation: 1 - 50*/
+ if (isNaN(parseInt(col_start) === false) {
+document.getElementById("err").innerHTML = "Error: Horizontal Start Value is Not a Number";
+return;
+}
+
 if ((parseInt(col_start) < 1) || (parseInt(col_start) > 50)) {
-document.getElementById("err").innerHTML = "Error: Horizontal Start Value";
+document.getElementById("err").innerHTML = "Error: Check Horizontal Start Value";
+return;
+}
+
+if (isNaN(parseInt(col_end) === false) {
+document.getElementById("err").innerHTML = "Error: Horizontal End Value is Not a Number";
 return;
 }
 
 if ((parseInt(col_end) < 1) || (parseInt(col_end) > 50)) {
-document.getElementById("err").innerHTML = "Error: Horizontal End Value";
+document.getElementById("err").innerHTML = "Error: Check Horizontal End Value";
+return;
+}
+
+if (isNaN(parseInt(row_start) === false) {
+document.getElementById("err").innerHTML = "Error: Vertical Start Value is Not a Number";
 return;
 }
 
 if ((parseInt(row_start) < 1) || (parseInt(row_start) > 50)) {
-document.getElementById("err").innerHTML = "Error: Vertical Start Value";
+document.getElementById("err").innerHTML = "Error: Check Vertical Start Value";
+return;
+}
+
+if (isNaN(parseInt(row_end) === false) {
+document.getElementById("err").innerHTML = "Error: Vertical End Value is Not a Number";
 return;
 }
 
 if ((parseInt(row_end) < 1) || (parseInt(row_end) > 50)) {
-document.getElementById("err").innerHTML = "Error: Vertical End Value";
+document.getElementById("err").innerHTML = "Error: Check Vertical End Value";
 return;
 }
 
