@@ -9,30 +9,29 @@
  </head>
 
  <body>
-<p id="date"></p>
-<p></p>
-<h3 id="multTitle">Multiplication Table</h3>
-<p>
-<form method="POST" href=" " id="iform">
-Enter Values (1 - 50)<br><br>
-Horizontal Start Value:    <input id="t_row_start" type="number" min="2" max="50" required><br>
-Horizontal End Value: <input id="t_row_end" type="number" min="2" max="50" required><br>
-<br>
-Vertical Start Value: <input id="t_col_start" type="number" min="2" max="50" required><br>
-Vertical End Value: <input id="t_col_end" type="number" min="2" max="50" required>
-<br><button type="button" onclick=generateTable();>Generate</button>
+    <p id="date"></p>
+    <p></p>
+    <h3 id="multTitle">Multiplication Table</h3>
+    <p>
+    <form method="POST" href=" " id="iform">
+    Enter Values (1 - 50)<br><br>
+    Horizontal Start Value:    <input id="t_row_start" type="number" min="2" max="50" required><br>
+    Horizontal End Value: <input id="t_row_end" type="number" min="2" max="50" required><br>
+  <br>
+    Vertical Start Value: <input id="t_col_start" type="number" min="2" max="50" required><br>
+    Vertical End Value: <input id="t_col_end" type="number" min="2" max="50" required>
+ <br><button type="button" onclick=generateTable();>Generate</button>
 </form>
 </p>
-<p id="err"></p>
+  <p id="err"></p>
+    <table id="multTable">
+    </table>
+    <script src="../js/assign6.js">
+    </script>
 
-<table id="multTable">
-</table>
+    <script>
+    document.getElementById("date").innerHTML = Date();
+    </script>
 
-<script src="../js/assign6.js">
-</script>
-
-<script>
-document.getElementById("date").innerHTML = Date();
-</script>
-</body>
+  </body>
 </html>

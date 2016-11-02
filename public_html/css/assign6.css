@@ -63,6 +63,17 @@ margin-left: 180px;
 margin-top: 20px;
 margin-bottom: 20px;
 }
+/*Style for canvas*/
+#tcanvas {
+margin-left:auto;
+margin-right:auto;
+}
+
+/*Style for Table div*/
+#dTable {
+width: auto;
+height: auto;
+}
 
 /*Multiplication Table styling*/
 #multTable {

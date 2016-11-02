@@ -5,14 +5,12 @@
 */
 
 /*Function generateTable: builds multiplication table*/
-
 var generateTable = function() {
 var mTable = null;
 mTable = document.getElementById("multTable");
 
 var col_start = document.getElementById("t_row_start").value;
 var col_end = document.getElementById("t_row_end").value;
-
 var row_start = document.getElementById("t_col_start").value;
 var row_end = document.getElementById("t_col_end").value;
 
@@ -23,17 +21,27 @@ return;
 }
 
 if ((parseInt(col_end) < 1) || (parseInt(col_end) > 50)) {
-document.getElementById("err").innerHTML = "Error: Horizontal Input";
+document.getElementById("err").innerHTML = "Error: Horizontal End Value";
 return;
 }
 
 if ((parseInt(row_start) < 1) || (parseInt(row_start) > 50)) {
-document.getElementById("err").innerHTML = "Error: Vertical Input";
+document.getElementById("err").innerHTML = "Error: Vertical Start Value";
 return;
 }
 
 if ((parseInt(row_end) < 1) || (parseInt(row_end) > 50)) {
-document.getElementById("err").innerHTML = "Error: Vertical Input";
+document.getElementById("err").innerHTML = "Error: Vertical End Value";
+return;
+}
+
+if (parseInt(col_start) >= parseInt(col_end)) {
+document.getElementById("err").innerHTML = "Error: Horizontal Start >= Horizontal End";
+return;
+}
+
+if (parseInt(row_start) >= parseInt(row_end)) {
+document.getElementById("err").innerHTML = "Error: Vertical Start >= Vertical End";
 return;
 }
 
@@ -59,13 +67,8 @@ items[i] = mTable.insertRow(i);
   }
  }
 
-for (i = 0; i <= row_diff; i = i + 1) {
- for (j = 0; j <= col_diff; j = j + 1) {
- items[i][j] = undefined;
- }
-}
-  return;
+return;
 };
 
-
+/* End of Function*/
 
