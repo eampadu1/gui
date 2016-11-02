@@ -28,10 +28,12 @@ You may access the website from here: [Ebenezer's Homepage](https://eampadu1.git
 
 Added:
 
-2 files:
+3 files:
 
 assignment_6.html
 
 assign6.js
 
-Assignment 6 can be accessed from homepage.
+assign6.css
+
+Assignment 6 can be accessed from homepage link above this text.
