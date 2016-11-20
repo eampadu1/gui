@@ -1,66 +1,47 @@
-/*
-**Author: Ebenezer Ampadu
-**Program: assign7.js
-**Description: jquery and JavaScript Program for Assignment 7
-*/
+//Author: Ebenezer Ampadu
+//Program: assign7.js
+//Description: jquery is used to do the validation of the form fields
 
-/*
-Function validateInput: To validate user input
-var validateInput = function() {
-var $tr_start = $("#t_row_start").val();
-if ($tr_start < 1) {
-$("#err").text('Check Horizontal Start');
-return;
-}
-var $tr_end = $("#t_row_end").val();
-if ($tr_end < 1) {
-$("#err").text('Check Horizontal End');
-return;
-}
-var $tc_start = $("#t_col_start").val();
-if ($tc_start < 1) {
-$("#err").text('Check Vertical Start');
-return;
-}
-var $tc_end = $("#t_col_end").val();
-if ($tc_end < 1) {
-$("#err").text('Check Vertical End');
-return;
-}
-};
-*/
-
-
-/*Function generateTable: builds multiplication table*/
+/*Function generateTable: builds multiplication table; Mixed jquery and JavaScript*/
 var generateTable = function() {
 var mTable = null;
 mTable = document.getElementById("multTable");
 
 var col_start = document.getElementById("t_row_start").value;
-var $tr_start = $("#t_row_start").val();
-if ($tr_start < 1) {
-$("#err").text('Check Horizontal Start');
+var $col_start = col_start;
+if ($col_start < 1) {
+$("#err").text('Error: Horizontal Start Entry is Less than 1');
 return;
 }
 
 var col_end = document.getElementById("t_row_end").value;
-var $tr_end = $("#t_row_end").val();
-if ($tr_end < 1) {
-$("#err").text('Check Horizontal End');
+var $col_end = col_end;
+if ($col_end < 1) {
+$("#err").text('Error: Horizontal End Entry is Less than 1');
 return;
 }
 
 var row_start = document.getElementById("t_col_start").value;
-var $tc_start = $("#t_col_start").val();
-if ($tc_start < 1) {
-$("#err").text('Check Vertical Start');
+var $row_start = row_start;
+if ($row_start < 1) {
+$("#err").text('Error: Vertical Start Entry is Less than 1');
 return;
 }
 
 var row_end = document.getElementById("t_col_end").value;
-var $tc_end = $("#t_col_end").val();
-if ($tc_end < 1) {
-$("#err").text('Check Vertical End');
+var $row_end = row_end;
+if ($row_end < 1) {
+$("#err").text('Error: Vertical End Entry is Less than 1');
+return;
+}
+
+if ($col_start >= $col_end) {
+$("#err").text('Error: Horizontal Start Entry must be less than Horizontal End Entry');
+return;
+}
+
+if ($row_start >= $row_end) {
+$("#err").text('Error: Vertical Start Entry must be less than Vertical End Entry');
 return;
 }
 
