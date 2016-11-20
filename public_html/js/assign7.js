@@ -2,41 +2,43 @@
 //Program: assign7.js
 //Description: jquery is used to do the validation of the form fields
 
-/*Function generateTable: builds multiplication table; Mixed jquery and JavaScript*/
+//Function generateTable: builds multiplication table; Mixed jquery and JavaScript
+
 var generateTable = function() {
 var mTable = null;
 mTable = document.getElementById("multTable");
 
 var col_start = document.getElementById("t_row_start").value;
+var col_end = document.getElementById("t_row_end").value;
+var row_start = document.getElementById("t_col_start").value;
+var row_end = document.getElementById("t_col_end").value;
+
 var $col_start = col_start;
 if ($col_start < 1) {
 $("#err").text('Error: Horizontal Start Entry is Less than 1');
 return;
 }
 
-var col_end = document.getElementById("t_row_end").value;
 var $col_end = col_end;
 if ($col_end < 1) {
 $("#err").text('Error: Horizontal End Entry is Less than 1');
 return;
 }
 
-var row_start = document.getElementById("t_col_start").value;
+if ($col_start >= $col_end) {
+$("#err").text('Error: Horizontal Start Entry must be less than Horizontal End Entry');
+return;
+}
+
 var $row_start = row_start;
 if ($row_start < 1) {
 $("#err").text('Error: Vertical Start Entry is Less than 1');
 return;
 }
 
-var row_end = document.getElementById("t_col_end").value;
 var $row_end = row_end;
 if ($row_end < 1) {
 $("#err").text('Error: Vertical End Entry is Less than 1');
-return;
-}
-
-if ($col_start >= $col_end) {
-$("#err").text('Error: Horizontal Start Entry must be less than Horizontal End Entry');
 return;
 }
 
@@ -65,6 +67,9 @@ items[i] = mTable.insertRow(i);
   }
  }
 
+while (items[0][1] != NULL) {
+return;
+}
 return;
 };
 
