@@ -1,37 +1,37 @@
 <!DOCTYPE html>
 <html lang = "en">
- <head>
- <!--Author: Ebenezer Ampadu-->
- <!--Description: Web Page for Assignment 6-->
- <meta charset = "utf-8">
-   <title>GUI -- Assignment 6</title>
-    <link rel="stylesheet" href="../css/assign6.css">
- </head>
+<head>
+<!--Author: Ebenezer Ampadu-->
+<!--Description: Web Page for Assignment 6-->
+<meta charset = "utf-8">
+<title>GUI -- Assignment 6</title>
+<link rel="stylesheet" href="../css/assign6.css">
+</head>
 
- <body>
-    <p id="date"></p>
-    <p></p>
-    <h3 id="multTitle">Multiplication Table</h3>
-    <p>
-    <form method="POST" href=" " id="iform">
-    Enter Values (1 - 50)<br><br>
-    Horizontal Start Value:    <input id="t_row_start" type="number" min="1" max="50" required><br>
-    Horizontal End Value: <input id="t_row_end" type="number" min="1" max="50" required><br>
-  <br>
-    Vertical Start Value: <input id="t_col_start" type="number" min="1" max="50" required><br>
-    Vertical End Value: <input id="t_col_end" type="number" min="1" max="50" required>
- <br><button type="button" onclick="generateTable()";>Generate</button>
+<body>
+<p id="date"></p>
+<p></p>
+<h3 id="multTitle">Multiplication Table</h3>
+<p>
+<form method="POST" href=" " id="iform">
+Enter Values (1 - 50)<br><br>
+Horizontal Start Value:    <input id="t_row_start" type="number" min="1" max="50" required><br>
+Horizontal End Value: <input id="t_row_end" type="number" min="1" max="50" required><br>
+<br>
+Vertical Start Value: <input id="t_col_start" type="number" min="1" max="50" required><br>
+Vertical End Value: <input id="t_col_end" type="number" min="1" max="50" required>
+<br><button type="button" onclick="generateTable()";>Generate</button>
 </form>
 </p>
-  <p id="err"></p>
-    <table id="multTable">
-    </table>
-    <script src="../js/assign6.js">
-    </script>
+<p id="err"></p>
+<table id="multTable">
+</table>
+<script src="../js/assign6.js">
+</script>
 
-    <script>
-    document.getElementById("date").innerHTML = Date();
-    </script>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
 
-  </body>
+</body>
 </html>

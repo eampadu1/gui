@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<!--Author: Ebenezer Ampadu-->
+<!--Description: Web Page for Assignment 8-->
+<meta charset = "utf-8">
+<title>GUI -- Assignment 8</title>
+<link rel = "stylesheet" href = "../css/assign6.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/
+jquery/3.1.1/jquery.min.js"></script>
+<!--The following CDN's from https://jqueryui.com/slider-->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+<p id="date"></p>
+<p></p>
+<h3 id="multTitle">Multiplication Table</h3>
+<p>
+<form method="POST" href=" " id="iform">
+<br><br>
+
+<label>Enter Values (1 - 50)</label><br><br>
+<label>Horizontal Start Value:</label>    
+<div id = "row_start_slider"><div id ="han1" class="ui-slider-handle">
+</div></div><br>
+<label>Horizontal End Value:</label> 
+<div id = "row_end_slider"><div id="han2" class="ui-slider-handle">
+</div></div><br>
+<br>
+<label>Vertical Start Value:</label> 
+<div id = "col_start_slider"><div id = "han3" class = "ui-slider-handle">
+</div></div><br>
+<label>Vertical End Value:</label> 
+<div id = "col_end_slider"><div id = "han4" class = "ui-slider-handle">
+</div></div><br>
+
+<button type="button">Generate</button>
+</form>
+</p>
+<p id="err"></p>
+<table id="multTable">
+</table>
+
+<!--scripts-->
+<script src="../js/assign8.js">
+</script>
+
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
+<!--
+<script>
+$(document).ready(function(){
+		});
+</script>
+-->
+<!--Testing UI-->
+<script>
+$(document).ready(function() {
+		var rfirst, rend, cfirst, cend;
+		var handle1= $("#han1");
+var handle2 = $("#han2");
+var handle3 = $("#han3");
+var handle4 = $("#han4");
+		$("#row_start_slider").slider({
+create: function() {
+rfirst = $(this).slider("value");
+handle1.text(rfirst);
+}, 
+slide: function(event, ui) {
+handle1.text(ui.value);
+}
+});
+
+		$("#row_end_slider").slider({
+create: function() {
+rend = $(this).slider("value");
+handle2.text(rend);
+},
+slide: function(event, ui) {
+handle2.text(ui.value);
+}
+});
+
+		$("#col_start_slider").slider({ 
+create: function() {
+cfirst = $(this).slider("value");
+handle3.text(cfirst);
+},
+slide: function(event, ui) {
+handle3.text(ui.value);
+}
+});
+
+		$("#col_end_slider").slider({ 
+create: function() {
+cend = $(this).slider("value");
+handle4.text(cend);
+},
+slide: function(event, ui) {
+handle4.text(ui.value);
+}
+});
+
+/*
+rfirst = parseInt(rfirst, 10);
+rend = parseInt(rend, 10);
+cfirst = parseInt(cfirst, 10);
+cend = parseInt(cend, 10);
+*/
+
+$("button").click(function(){
+generateTable(rfirst, rend, cfirst, cend);
+		});
+
+});
+</script>
+</body>
+</html>
+

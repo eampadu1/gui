@@ -104,6 +104,16 @@ tr:nth-child(2n) {
 background-color: black;
 color: white;
 }
+
+/*style for slider widget: assign 8*/
+
+div #han1, #han2, #han3, #han4 {
+width: 2em;
+height: 1.5em;
+text-align: center;
+line-height: 1.5em;
+}
+
 /* End of style sheet*/
 
 

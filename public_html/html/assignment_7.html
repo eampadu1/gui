@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang = "en">
- <head>
- <!--Author: Ebenezer Ampadu-->
- <!--Description: Web Page for Assignment 7-->
- <meta charset = "utf-8">
-   <title>GUI -- Assignment 7</title>
-    <link rel="stylesheet" href="../css/assign6.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
- </head>
+<head>
+<!--Author: Ebenezer Ampadu-->
+<!--Description: Web Page for Assignment 8-->
+<meta charset = "utf-8">
+<title>GUI -- Assignment 8</title>
+<link rel = "stylesheet" href = "../css/assign6.css">
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/
+smoothness/jquery-ui.css"></script>
+</head>
 
- <body>
-    <p id="date"></p>
-    <p></p>
-    <h3 id="multTitle">Multiplication Table</h3>
-    <p>
-    <form method="POST" href=" " id="iform">
-    Please Refresh Each Time<br><br>
-    Enter Values (1 - 50)<br><br>
-    Horizontal Start Value:    <input id="t_row_start" type="number" min="1" max="50" required><br>
-    Horizontal End Value: <input id="t_row_end" type="number" min="1" max="50" required><br>
-  <br>
-    Vertical Start Value: <input id="t_col_start" type="number" min="1" max="50" required><br>
-    Vertical End Value: <input id="t_col_end" type="number" min="1" max="50" required>
- <br><button type="button">Generate</button>
+<body>
+<div id = "myTabs">
+<p id="date"></p>
+<p></p>
+<h3 id="multTitle">Multiplication Table</h3>
+<p>
+<form method="POST" href=" " id="iform">
+Please Refresh Each Time<br><br>
+Enter Values (1 - 50)<br><br>
+Horizontal Start Value:    <input id="t_row_start" type="number" min="1" max="50" required><br>
+Horizontal End Value: <input id="t_row_end" type="number" min="1" max="50" required><br>
+<br>
+Vertical Start Value: <input id="t_col_start" type="number" min="1" max="50" required><br>
+Vertical End Value: <input id="t_col_end" type="number" min="1" max="50" required>
+<br><button type="button">Generate</button>
 </form>
 </p>
-  <p id="err"></p>
-    <table id="multTable">
-    </table>
-    <script src="../js/assign7.js">
-    </script>
+<p id="err"></p>
+<table id="multTable">
+</table>
+</div>
+<script src="../js/assign7.js">
+</script>
 
-    <script>
-    document.getElementById("date").innerHTML = Date();
-    </script>
+<script>
+document.getElementById("date").innerHTML = Date();
+</script>
 <script>
 $(document).ready(function(){
-$("button").click(function(){
-generateTable();
- return;
-});
+		$("button").click(function(){
+				generateTable();
+				return;
+				});
+		});
+</script>
+<!--Testing UI-->
+<script>
+(function($) {
+$ ("#myTabs").tabs();
 });
 </script>
-  </body>
-</html>
+</body>
+</htm
+>
