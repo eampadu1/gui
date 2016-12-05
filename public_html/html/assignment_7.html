@@ -4,7 +4,7 @@
 <!--Author: Ebenezer Ampadu-->
 <!--Description: Web Page for Assignment 8-->
 <meta charset = "utf-8">
-<title>GUI -- Assignment 8</title>
+<title>GUI -- Assignment 7</title>
 <link rel = "stylesheet" href = "../css/assign6.css">
 <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
@@ -13,7 +13,6 @@ smoothness/jquery-ui.css"></script>
 </head>
 
 <body>
-<div id = "myTabs">
 <p id="date"></p>
 <p></p>
 <h3 id="multTitle">Multiplication Table</h3>
@@ -32,27 +31,19 @@ Vertical End Value: <input id="t_col_end" type="number" min="1" max="50" require
 <p id="err"></p>
 <table id="multTable">
 </table>
-</div>
 <script src="../js/assign7.js">
+document.getElementById("date").innerHTML = Date();
 </script>
 
 <script>
-document.getElementById("date").innerHTML = Date();
-</script>
-<script>
-$(document).ready(function(){
-		$("button").click(function(){
-				generateTable();
-				return;
-				});
-		});
-</script>
-<!--Testing UI-->
-<script>
-(function($) {
-$ ("#myTabs").tabs();
+$(document).ready(function() {
+$("button").click(function(){
+generateTable();
+return;
+ });
 });
-</script>
+</script
 </body>
-</htm
->
+</html>
+
+

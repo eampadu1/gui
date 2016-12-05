@@ -67,9 +67,6 @@ items[i] = mTable.insertRow(i);
   }
  }
 
-while (items[0][1] != NULL) {
-return;
-}
 return;
 };
 

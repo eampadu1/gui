@@ -37,7 +37,6 @@ jquery/3.1.1/jquery.min.js"></script>
 <label>Vertical End Value:</label> 
 <div id = "col_end_slider"><div id = "han4" class = "ui-slider-handle">
 </div></div><br>
-
 <button type="button">Generate</button>
 </form>
 </p>
@@ -45,10 +44,10 @@ jquery/3.1.1/jquery.min.js"></script>
 <table id="multTable">
 </table>
 
-<!--scripts-->
+<!--scripts
 <script src="../js/assign8.js">
 </script>
-
+-->
 <script>
 document.getElementById("date").innerHTML = Date();
 </script>
@@ -60,12 +59,12 @@ $(document).ready(function(){
 -->
 <!--Testing UI-->
 <script>
+var rfirst, rend, cfirst, cend;
 $(document).ready(function() {
-		var rfirst, rend, cfirst, cend;
 		var handle1= $("#han1");
-var handle2 = $("#han2");
-var handle3 = $("#han3");
-var handle4 = $("#han4");
+		var handle2 = $("#han2");
+		var handle3 = $("#han3");
+		var handle4 = $("#han4");
 		$("#row_start_slider").slider({
 create: function() {
 rfirst = $(this).slider("value");
@@ -86,7 +85,7 @@ handle2.text(ui.value);
 }
 });
 
-		$("#col_start_slider").slider({ 
+$("#col_start_slider").slider({ 
 create: function() {
 cfirst = $(this).slider("value");
 handle3.text(cfirst);
@@ -96,7 +95,7 @@ handle3.text(ui.value);
 }
 });
 
-		$("#col_end_slider").slider({ 
+$("#col_end_slider").slider({ 
 create: function() {
 cend = $(this).slider("value");
 handle4.text(cend);
@@ -104,19 +103,41 @@ handle4.text(cend);
 slide: function(event, ui) {
 handle4.text(ui.value);
 }
-});
-
-/*
-rfirst = parseInt(rfirst, 10);
-rend = parseInt(rend, 10);
-cfirst = parseInt(cfirst, 10);
-cend = parseInt(cend, 10);
-*/
 
 $("button").click(function(){
-generateTable(rfirst, rend, cfirst, cend);
-		});
 
+		/*Testing function*/
+
+		var mTable = null;
+		mTable = document.getElementById("multTable");
+
+		var col_start = rfirst;
+		var col_end = rend;
+		var row_start = cfirst;
+		var row_end = cend;
+
+		/*Input Validation: 1 - 50*/
+
+		var row_diff = row_end - row_start+1;
+		var col_diff = col_end - col_start+1;
+
+		var items = new Array(row_diff);
+		var i,j;
+		for (i = 0; i <= row_diff; i = i + 1) {
+		items[i] = new Array(col_diff);
+		items[i] = mTable.insertRow(i);
+
+		for (j = 0; j <= col_diff; j = j + 1) {
+			items[i][j] = items[i].insertCell(j);
+
+			items[0][0].innerHTML = " ";
+			items[0][j].innerHTML = parseInt(j) + (parseInt(col_start)-1);
+			items[i][0].innerHTML  = parseInt(i) + (parseInt(row_start)-1);
+			items[i][j].innerHTML = (parseInt(i) + (parseInt(row_start)-1)) * (parseInt(j)+ (parseInt(col_start)-1));
+		}
+		}
+		return;
+});
 });
 </script>
 </body>

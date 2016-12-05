@@ -4,16 +4,18 @@
 **Description: JavaScript Program for Assignment 6
 */
 
-/*Function generateTable: builds multiplication table*/
-var generateTable = function() {
 
-mTable = document.getElementById("multTable");
+/*Function generateTable: builds multiplication table*/
+function generateTable() {
+
 var mTable = null;
-var col_start = var $rfirst;
+mTable = document.getElementById("multTable");
+
+var col_start = rfirst;
 alert(typeof(col_start));
-var col_end = var $rend;
-var row_start = var $cfirst;
-var row_end = var $cend;
+var col_end = rend;
+var row_start = cfirst;
+var row_end = cend;
 
 /*Input Validation: 1 - 50*/
 if ((parseInt(col_start) < 1) || (parseInt(col_start) > 50)) {
