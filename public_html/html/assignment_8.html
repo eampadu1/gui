@@ -37,7 +37,10 @@ jquery/3.1.1/jquery.min.js"></script>
 <label>Vertical End Value:</label> 
 <div id = "col_end_slider"><div id = "han4" class = "ui-slider-handle">
 </div></div><br>
-<button type="button">Generate</button>
+<div>
+<br><p id="err"></p>
+<button type="button" onclick="generateTable()">Generate</button>
+</div>
 </form>
 </p>
 <p id="err"></p>
@@ -67,58 +70,58 @@ $(document).ready(function() {
 		var handle4 = $("#han4");
 		$("#row_start_slider").slider({
 create: function() {
-rfirst = $(this).slider("value");
-handle1.text(rfirst);
+handle1.text($(this).slider("value"));
 }, 
 slide: function(event, ui) {
+rfirst = ui.value;
 handle1.text(ui.value);
 }
 });
 
 		$("#row_end_slider").slider({
 create: function() {
-rend = $(this).slider("value");
-handle2.text(rend);
+handle2.text($(this).slider("value"));
 },
 slide: function(event, ui) {
+rend = ui.value;
 handle2.text(ui.value);
 }
 });
 
 $("#col_start_slider").slider({ 
 create: function() {
-cfirst = $(this).slider("value");
-handle3.text(cfirst);
+handle3.text($(this).slider("value"));
 },
 slide: function(event, ui) {
+cfirst = ui.value;
 handle3.text(ui.value);
 }
 });
 
 $("#col_end_slider").slider({ 
 create: function() {
-cend = $(this).slider("value");
-handle4.text(cend);
+handle4.text($(this).slider("value"));
 },
 slide: function(event, ui) {
+cend = ui.value;
 handle4.text(ui.value);
 }
 });
+});
+</script>
 
-$("button").click(function(){
-
+<script>
+var generateTable = function(){
 		/*Testing function*/
-
 		var mTable = null;
 		mTable = document.getElementById("multTable");
 
-		var col_start = rfirst;
-		var col_end = rend;
-		var row_start = cfirst;
-		var row_end = cend;
+		var col_start = Number(rfirst);
+		var col_end = Number(rend);
+		var row_start = Number(cfirst);
+		var row_end = Number(cend);
 
 		/*Input Validation: 1 - 50*/
-
 		var row_diff = row_end - row_start+1;
 		var col_diff = col_end - col_start+1;
 
@@ -138,8 +141,7 @@ $("button").click(function(){
 		}
 		}
 		return;
-});
-});
+}
 </script>
 </body>
 </html>
