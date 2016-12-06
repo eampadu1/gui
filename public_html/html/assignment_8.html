@@ -110,38 +110,7 @@ handle4.text(ui.value);
 });
 </script>
 
-<script>
-var generateTable = function(){
-		/*Testing function*/
-		var mTable = null;
-		mTable = document.getElementById("multTable");
-
-		var col_start = Number(rfirst);
-		var col_end = Number(rend);
-		var row_start = Number(cfirst);
-		var row_end = Number(cend);
-
-		/*Input Validation: 1 - 50*/
-		var row_diff = row_end - row_start+1;
-		var col_diff = col_end - col_start+1;
-
-		var items = new Array(row_diff);
-		var i,j;
-		for (i = 0; i <= row_diff; i = i + 1) {
-		items[i] = new Array(col_diff);
-		items[i] = mTable.insertRow(i);
-
-		for (j = 0; j <= col_diff; j = j + 1) {
-			items[i][j] = items[i].insertCell(j);
-
-			items[0][0].innerHTML = " ";
-			items[0][j].innerHTML = parseInt(j) + (parseInt(col_start)-1);
-			items[i][0].innerHTML  = parseInt(i) + (parseInt(row_start)-1);
-			items[i][j].innerHTML = (parseInt(i) + (parseInt(row_start)-1)) * (parseInt(j)+ (parseInt(col_start)-1));
-		}
-		}
-		return;
-}
+<script src="../js/assign8.js">
 </script>
 </body>
 </html>
