@@ -1,13 +1,16 @@
-uthor: Ebenezer Ampadu
-**Program: pacific.css
-**Description: Style sheet for pacific assignment
+/*
+** Author: Ebenezer Ampadu
+** Program: pacific.css
+** Description: Style sheet for pacific assignment
 */
 
-header, hgroup, nav, footer, figure, figcaption, aside, section, article,div {
-display: inline;
+/* General styling for these elements*/
+header, hgroup, nav, footer,
+figure, figcaption, aside, section, article,div {
+display: block;
 }
 
-
+/* Styling for body*/
 body {
 width:80%;
       background-image: url("../images/ptrbackground.jpg");
@@ -15,17 +18,19 @@ width:80%;
 color: #666666;
        font-family: Arial, Helvetica, sans-serif;
 border: 0px;
-margin: auto;
-	background-color: #90c8e3;  
+margin-left: auto;
+margin-right: auto;
+	/*background-color: #90c8e3;*/  
 }
 
-
+/* Styling for div element embedded inside body element*/
 #wrapper {    
 width: 80%;
 margin: auto;
 	background-color: white;
 }
 
+/* Styling for interior content*/
 #content {
 width:100%-180px;
 height: 600px;
@@ -34,33 +39,37 @@ height: 600px;
 clear:right;
 }
 
+/* Styling for main image*/
 img{
 float: left;    
 display: inline;
 }
 
-
+/* Styling for unordered list inside body*/
 #content ul{
-	list-style-image:url('marker.gif');
+	list-style-image:url('../images/marker.gif');
 	list-style-position: inside;
 	margin-left: 10px;
 }
 
+/* Styling for header*/
 header {
 	background-color: black;
-	background-image:url("sunset.jpg");
+	background-image:url("../images/sunset.jpg");
 	background-repeat: no-repeat;
 	background-position: top right;
 color: white;
 }
 
+/* Styling for unordered list elements atop navigation bar on left panel*/
 nav ul {
 	list-style-type: none;
 	font-size: 1.2em;
 width: 20%;
-
+font-weight: bold;
 }
 
+/* Styling for navigation bar*/
 nav{
 float: left;
 width: 190px;
@@ -68,11 +77,10 @@ height: 648px;
 	background-color: #90c8e3;
 	vertical-align: baseline;
 	margin-bottom: 0px;
-
 }
 
+/* Styling for lists anchors*/
 li a {
-
 	text-decoration: none;
 color: black;
        font-weight: bold;
@@ -80,65 +88,71 @@ width: 60px;
 display: block;
 }
 
+/* Styling for navigation anchors when user visits*/
 nav a:visited {
 color: #344873;
        text-decoration: none;
 }
 
+/* Styling for navigation anchors when user hovers*/
 nav a:hover {
 color: #FFFFFF;
        text-decoration: none;
 }
 
-
+/* Styling for content div under h2 header*/
 h2 #content {
 margin: 0px;
 	background-color: white;
 }
 
-p{
+/* Styling for all paragraphs*/
+p {
 	background-color: white;
 }
+
+/* Styling for all headers h1*/
 h1 {
 	margin-bottom: 0;
 padding: 10px;
-
 }
 
+/* Styling for all headers h2*/
 h2 {
 color: #3399CC;
 }
 
-h1,h2 {
+/* Overlapping styles for h1, and h2*/
+h1, h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
+/* Styling for contact div*/
 #contact {
 	font-size: 90%;
 	padding-bottom: 20px;
-
 }
 
+/* Styling for dt element*/
 dt {
 color: #000033;
 }
 
+/* Styling for footer element*/
 footer {
 	font-family: Georgia, "Times New Roman", serif;
 	border-left: 190px;
 	padding-left: 190px;
-
 	font-size: 70%;
 	font-style: italic;   
 	background-color: white;
 	border-left-color:  #90c8e3;
-
 }
 
+/* Styling for resort class*/
 .resort {
 color:cornflowerblue;
       font-weight: bold;
       text-align: center;
 }
-
-
+/* End of css file*/
