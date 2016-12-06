@@ -6,7 +6,7 @@
 
 /* General styling for the following elements*/
 header, hgroup, nav, footer, figure, figcaption, aside, section, article,div {
-display: inline;
+display: block;
 }
 
 /* Styling for body element*/
