@@ -1,13 +1,15 @@
-uthor: Ebenezer Ampadu
-**Program: pacific.css
-**Description: Style sheet for pacific assignment
+/*
+** Author: Ebenezer Ampadu
+** Program: pacific.css
+** Description: Style sheet for pacific assignment
 */
 
+/* General styling for the following elements*/
 header, hgroup, nav, footer, figure, figcaption, aside, section, article,div {
 display: inline;
 }
 
-
+/* Styling for body element*/
 body {
 width:80%;
       background-image: url("../images/ptrbackground.jpg");
@@ -19,13 +21,14 @@ margin: auto;
 	background-color: #90c8e3;  
 }
 
-
+/* Styling for wrapper div embedded inside body*/
 #wrapper {    
 width: 80%;
 margin: auto;
 	background-color: white;
 }
 
+/* Styling for content div element*/
 #content {
 width:100%-180px;
 height: 600px;
@@ -34,18 +37,20 @@ height: 600px;
 clear:right;
 }
 
+/* Styling for main body image*/
 img{
 float: left;    
 display: inline;
 }
 
-
+/* Styling for unordered list elements inside content div*/
 #content ul{
 	list-style-image:url('marker.gif');
 	list-style-position: inside;
 	margin-left: 10px;
 }
 
+/* Styling for header*/
 header {
 	background-color: black;
 	background-image:url("sunset.jpg");
@@ -54,13 +59,14 @@ header {
 color: white;
 }
 
+/* Styling for unordered list elements underneath navigation bar*/
 nav ul {
 	list-style-type: none;
 	font-size: 1.2em;
 width: 20%;
-
 }
 
+/* Styling for navigation bar*/
 nav{
 float: left;
 width: 190px;
@@ -68,11 +74,10 @@ height: 648px;
 	background-color: #90c8e3;
 	vertical-align: baseline;
 	margin-bottom: 0px;
-
 }
 
+/* Styling for list anchor elements*/
 li a {
-
 	text-decoration: none;
 color: black;
        font-weight: bold;
@@ -80,65 +85,73 @@ width: 60px;
 display: block;
 }
 
+/* Styling for list anchor elements when user visits*/
 nav a:visited {
 color: #344873;
        text-decoration: none;
 }
 
+/* Styling for list anchor elements when user hovers*/
 nav a:hover {
 color: #FFFFFF;
        text-decoration: none;
 }
 
-
+/* Styling for content div under h2 element*/
 h2 #content {
 margin: 0px;
 	background-color: white;
 }
 
+/* Styling for all paragraphs*/
 p{
 	background-color: white;
 }
+
+/* Styling for all h1 headers*/
 h1 {
 	margin-bottom: 0;
 padding: 10px;
-
 }
 
+/* Styling for all h2 headers*/
 h2 {
 color: #3399CC;
 }
 
+/* Overlapping styles for h1, and h2*/
 h1,h2 {
 	font-family: Georgia, "Times New Roman", serif;
 }
 
+/* Styling for contact div*/
 #contact {
 	font-size: 90%;
 	padding-bottom: 20px;
-
 }
 
+/* Styling for dt element*/
 dt {
 color: #000033;
 }
 
+/* Styling for foooter element*/
 footer {
 	font-family: Georgia, "Times New Roman", serif;
 	border-left: 190px;
 	padding-left: 190px;
-
 	font-size: 70%;
 	font-style: italic;   
 	background-color: white;
 	border-left-color:  #90c8e3;
-
 }
 
+/* Styling for resort class*/
 .resort {
 color:cornflowerblue;
       font-weight: bold;
       text-align: center;
 }
 
+/* End of Stylesheet*/
 
