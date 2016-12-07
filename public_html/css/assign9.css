@@ -71,8 +71,7 @@ margin-left: auto;
 margin-right: auto;
 }
 
-#a, #b, #c, #d, #e, #f, #g
-, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w,
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w,
 #x, #y, #z, #blank{
 width: 30px;
 height: 30px;
@@ -83,6 +82,8 @@ float: right;
 }
 
 button {
+width: 80px;
+height: 30px;
 font-weight: bold;
 margin-left: auto;
 margin-right: auto;
