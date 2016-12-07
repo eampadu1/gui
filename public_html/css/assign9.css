@@ -67,18 +67,19 @@ padding-left: 300px;
 
 /* Style for rack div*/
 #rackdiv {
-width: 700px;
-height: 180px;
 margin-left: auto;
 margin-right: auto;
 }
 
-#letter1, #letter2, #letter3, #letter4 {
+#a, #b, #c, #d, #e, #f, #g
+, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w,
+#x, #y, #z, #blank{
 width: 30px;
 height: 30px;
 float: left;
 padding-right: 5px;
 display: inline;
+float: right;
 }
 
 button {
