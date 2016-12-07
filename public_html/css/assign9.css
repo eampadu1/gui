@@ -75,7 +75,6 @@ margin-right: auto;
 #x, #y, #z, #blank{
 width: 30px;
 height: 30px;
-float: left;
 padding-right: 5px;
 display: inline;
 float: right;
