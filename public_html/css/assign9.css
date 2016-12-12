@@ -68,7 +68,9 @@ padding-left: 300px;
 /* Style for rack div*/
 #rackdiv {
 width: 700px;
-  height: 192px;
+  height: 162px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 300px;
 }
 
