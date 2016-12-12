@@ -67,8 +67,11 @@ padding-left: 300px;
 
 /* Style for rack div*/
 #rackdiv {
-margin-left: auto;
-margin-right: auto;
+width: 700px;
+  height: 162px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 300px;
 }
 
 #d1, #d2, #d3, #d4 {
@@ -81,7 +84,6 @@ height: 0px;
 width: 30px;
 height: 30px;
 padding-right: 5px;
-display: inline;
 float: right;
 }
 
@@ -91,4 +93,16 @@ height: 30px;
 font-weight: bold;
 margin-left: auto;
 margin-right: auto;
+}
+#d1,#d2,#d3,#d4 {
+width: 0px;
+  height:0px;
+}
+
+#score {
+font-size: 2.0em;
+  text-align: right;
+  padding-top: 50px;
+padding-bottom: 80px;
+font-weight: bold;
 }

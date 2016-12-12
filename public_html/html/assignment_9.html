@@ -20,17 +20,17 @@ padding: 0.5em;
 </script>
   <script>
   $(function() {
-    $("#d1").draggable();
-    $("#d2").draggable();
-    $("#d3").draggable();
-    $("#d4").draggable();
+    $("#d1").draggable({snap:".ui-widget-header"});
+    $("#d2").draggable({snap:".ui-widget-header"});
+    $("#d3").draggable({snap:".ui-widget-header"});
+    $("#d4").draggable({snap:".ui-widget-header"});
   });
   </script>
 </head>
 <body>
 <h1 id="tit">Scrabble</h1>
 
-<table id="tableau">
+<table id="tableau" class="ui-widget-header">
 <tr>
 <td id="td1">TW</td><td id></td><td></td><td id="td2">DL</td>
 <td></td><td></td><td></td><td id="td1">TW</td>
@@ -161,20 +161,27 @@ DL
 TW
 </td>
 </tr>
-</table>
+  </table>
 <p></p>
-<button type="button">Deal</button>
-
+<div>
+  <div>
+<button type="button">Deal</button><h3 id="score">Score</h3>
+  </div>
 <div id="rackdiv">
 <div id="d1" class="ui-widget-content">
-<img src="../images/a.jpg" alt="a-letter" id="a"></div>
+<img src="../images/a.jpg" alt="a-letter" id="a">
+</div>
  <div id="d2" class="ui-widget-content">
-<img src="../images/b.jpg" alt="b-letter" id="b"></div>
+<img src="../images/b.jpg" alt="b-letter" id="b">
+</div>
 <div id="d3" class="ui-widget-content">
-<img src="../images/c.jpg" alt="c-letter" id="c"></div>
- <div id="d4" class="ui-widget-content">
-<img src="../images/d.jpg" alt="d-letter" id="d"></div>
+<img src="../images/c.jpg" alt="c-letter" id="c">
+</div>
+<div id="d4" class="ui-widget-content">
+<img src="../images/d.jpg" alt="d-letter" id="d">
+</div></
 <img src="../images/rack.jpg" alt="rack" id="rack">
+</div>
 </div>
 <script>
 $(document).ready(function () {
