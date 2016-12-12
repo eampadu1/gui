@@ -4,6 +4,7 @@
 **Description: 
 */
 
+/*Style for body*/
 body{
     font-size: 80%;
     font-family: "Courier New", Courier, monospace;
@@ -15,6 +16,7 @@ body{
 
 }
 
+/*Style for page*/
 #page {
     margin-left: auto;
     margin-left: auto;
@@ -24,12 +26,14 @@ body{
     display: block;
     
 }
+/* Style for logo*/
 #logo img
 {
     padding-left: 500px;
     padding-right: 500px;
     padding-bottom: 15px;
 }
+/*Style for navigation*/
 #navigation{
 
     display:inline;
@@ -39,6 +43,7 @@ body{
     align-content: center;
 }
 
+/*Style for unordered list*/
 ul{
     margin-top: 15px;
      padding-left: 300px;
@@ -47,21 +52,24 @@ ul{
     margin-right: auto;
 }
 
+/* Style for anchors when user hovers*/
 a:hover {
     color: red;
 }
 
+/* Style for visited links*/
 a:link {
     text-decoration: none;
 }
 
+/* Style for all lists*/
 li{
    display:inline;
     padding: 15px;
 text-transform:uppercase;
 }
 
-
+/* Style for navigation bar*/
 #navigation img{
     padding-right: 300px;
     padding-left: 300px;
@@ -75,6 +83,7 @@ text-transform:uppercase;
  
 }
 
+/* Style for div image*/
 div img
 {
     padding-left: 300px;
