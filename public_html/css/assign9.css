@@ -91,6 +91,7 @@ margin-right: auto;
 #score {
 font-size: 2.0em;
   text-align: right;
-bottom-padding: 50px;
+  padding-top: 100px;
+padding-bottom: 100px;
 font-weight: bold;
 }
