@@ -70,7 +70,6 @@ width: 700px;
   height: 162px;
   padding-left: 300px;
   padding-top: 0px;
-  float: right;
 }
 
 #d1, #d2, #d3, #d4, #d5, #d6, #d7 {
@@ -83,6 +82,7 @@ height: 32px;
 width: 30px;
 height: 30px;
 padding-right: 5px;
+  float: right;
 }
 
 button {
