@@ -81,7 +81,7 @@ height: 32px;
 #x, #y, #z, #blank{
 width: 30px;
 height: 30px;
-padding-right: 5px;
+padding-right: 0px;
   float: right;
 }
 
