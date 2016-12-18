@@ -20,16 +20,24 @@ padding: 0.5em;
 </script>
   <script>
   $(function() {
-    $("#d1").draggable({snap:".ui-widget-header"});
-    $("#d2").draggable({snap:".ui-widget-header"});
-    $("#d3").draggable({snap:".ui-widget-header"});
-    $("#d4").draggable({snap:".ui-widget-header"});
+    $("#d1").draggable();
+    $("#d2").draggable();
+    $("#d3").draggable();
+    $("#d4").draggable();
+    $("#d5").draggable();
+    $("#d6").draggable();
+    $("#d7").draggable();
+
+    $("#tableau").droppable({
+    drop: function(event, ui) {
+    $(this).addClass("ui-state-highlight").find("table").html("Dropped");
+    }
+    });
   });
   </script>
 </head>
 <body>
 <h1 id="tit">Scrabble</h1>
-
 <table id="tableau" class="ui-widget-header">
 <tr>
 <td id="td1">TW</td><td id></td><td></td><td id="td2">DL</td>
@@ -165,10 +173,75 @@ TW
   
 <p></p>
 
-  <div>
-<button type="button">Deal</button><h3 id="score">Score</h3>
+<button type="button" onclick="Deal()">Deal</button><h3 id="score">Score</h3>
+
+<script>
+var Deal=function() {
+var letter;
+var first = Math.floor((Math.random() * 27) + 1);
+
+switch(first) {
+case 1: letter = '../images/a.jpg';
+break;
+case 2: letter = 'b';
+break;
+case 3: letter = 'c';
+break;
+case 4: letter = 'd';
+break;
+case 5: letter = 'e';
+break;
+case 6: letter = 'f';
+break;
+case 7: letter = 'g';
+break;
+case 8: letter = 'h';
+break;
+case 9: letter = 'i';
+break;
+case 10: letter = 'j';
+break;
+case 11: letter = 'k';
+break;
+case 12: letter = 'l';
+break;
+case 13: letter = 'm';
+break;
+case 14: letter = 'n';
+break;
+case 15: letter = 'o';
+break;
+case 16: letter = 'p';
+break;
+case 17: letter = 'q';
+break;
+case 18: letter = 'r';
+break;
+case 19: letter = 's';
+break;
+case 20: letter = 't';
+break;
+case 21: letter = 'u';
+break;
+case 22: letter = 'v';
+break;
+case 23: letter = 'w';
+break;
+case 24: letter = 'x';
+break;
+case 25: letter = 'y';
+break;
+case 26: letter = 'z';
+break;
+default: letter = 'blank';
+}
+alert('Letter = '+letter);
+return letter;
+}
+</script>
 
 <div id="rackdiv">
+
 <div id="d1" class="ui-widget-content">
 <img src="../images/a.jpg" alt="a-letter" id="a">
 </div>
@@ -181,370 +254,18 @@ TW
 <div id="d4" class="ui-widget-content">
 <img src="../images/d.jpg" alt="d-letter" id="d">
 </div>
-<div>
+<div id="d5" class="ui-widget-content">
+<img src="../images/e.jpg" alt="e-letter" id="e">
+</div>
+<div id="d6" class="ui-widget-content">
+<img src="../images/f.jpg" alt="f-letter" id="f">
+</div>
+<div id="d7" class="ui-widget-content">
+<img src="../images/g.jpg" alt="h-letter" id="g">
+</div>
 <img src="../images/rack.jpg" alt="rack" id="rack">
 </div>
-</div>
-<script>
-$(document).ready(function () {
-$("#letter1).hide();
-$("#letter2).hide();
-$("#letter3).hide();
-$("#letter4).hide();
-});
-</script>
-<script src="../js/assign9.js">
-$("button").click(function () {
-Deal();
 
-switch (Number(first)) {
-case 1:
-$("#letter1") = $("#a");
-break;
-case 2:
-$("#letter1") = $("#b");
-break;
-case 3:
-$("#letter1") = $("#c");
-break;
-case 4:
-$("#letter1") = $("#d");
-break;
-case 5:
-$("#letter1") = $("#e");
-break;
-case 6:
-$("#letter1") = $("#f");
-break;
-case 7:
-$("#letter1") = $("#g");
-break;
-case 8:
-$("#letter1") = $("#h");
-break;
-case 9:
-$("#letter1") = $("#i");
-break;
-case 10:
-$("#letter1") = $("#j");
-break;
-case 11:
-$("#letter1") = $("#k");
-break;
-case 12:
-$("#letter1") = $("#l");
-break;
-case 13:
-$("#letter1") = $("#m");
-break;
-case 14:
-$("#letter1") = $("#n");
-break;
-case 15:
-$("#letter1") = $("#o");
-break;
-case 16:
-$("#letter1") = $("#p");
-break;
-case 17:
-$("#letter1") = $("#q");
-break;
-case 18:
-$("#letter1") = $("#r");
-break;
-case 19:
-$("#letter1") = $("#s");
-break;
-case 20:
-$("#letter1") = $("#t");
-break;
-case 21:
-$("#letter1") = $("#u");
-break;
-case 22:
-$("#letter1") = $("#v");
-break;
-case 23:
-$("#letter1") = $("#w");
-break;
-case 24:
-$("#letter1") = $("#x");
-break;
-case 26:
-$("#letter1") = $("#y");
-break;
-case 27:
-$("#letter1") = $("#z");
-break;
-case 28:
-$("#letter1") = $("#blank");
-break;
-default:
-}
-
-
-switch (Number(second)) {
-case 1:
-$("#letter2") = $("#a");
-break;
-case 2:
-$("#letter2") = $("#b");
-break;
-case 3:
-$("#letter2") = $("#c");
-break;
-case 4:
-$("#letter2") = $("#d");
-break;
-case 5:
-$("#letter2") = $("#e");
-break;
-case 6:
-$("#letter2") = $("#f");
-break;
-case 7:
-$("#letter2") = $("#g");
-break;
-case 8:
-$("#letter2") = $("#h");
-break;
-case 9:
-$("#letter2") = $("#i");
-break;
-case 10:
-$("#letter2") = $("#j");
-break;
-case 11:
-$("#letter2") = $("#k");
-break;
-case 12:
-$("#letter2") = $("#l");
-break;
-case 13:
-$("#letter2") = $("#m");
-break;
-case 14:
-$("#letter2") = $("#n");
-break;
-case 15:
-$("#letter2") = $("#o");
-break;
-case 16:
-$("#letter2") = $("#p");
-break;
-case 17:
-$("#letter2") = $("#q");
-break;
-case 18:
-$("#letter2") = $("#r");
-break;
-case 19:
-$("#letter2") = $("#s");
-break;
-case 20:
-$("#letter2") = $("#t");
-break;
-case 21:
-$("#letter2") = $("#u");
-break;
-case 22:
-$("#letter2") = $("#v");
-break;
-case 23:
-$("#letter2") = $("#w");
-break;
-case 24:
-$("#letter2") = $("#x");
-break;
-case 26:
-$("#letter2") = $("#y");
-break;
-case 27:
-$("#letter2") = $("#z");
-break;
-case 28:
-$("#letter2") = $("#blank");
-break;
-default:
-}
-
-
-switch (Number(third)) {
-case 1:
-$("#letter3") = $("#a");
-break;
-case 2:
-$("#letter3") = $("#b");
-break;
-case 3:
-$("#letter3") = $("#c");
-break;
-case 4:
-$("#letter3") = $("#d");
-break;
-case 5:
-$("#letter3") = $("#e");
-break;
-case 6:
-$("#letter3") = $("#f");
-break;
-case 7:
-$("#letter3") = $("#g");
-break;
-case 8:
-$("#letter3") = $("#h");
-break;
-case 9:
-$("#letter3") = $("#i");
-break;
-case 10:
-$("#letter3") = $("#j");
-break;
-case 11:
-$("#letter3") = $("#k");
-break;
-case 12:
-$("#letter3") = $("#l");
-break;
-case 13:
-$("#letter3") = $("#m");
-break;
-case 14:
-$("#letter3") = $("#n");
-break;
-case 15:
-$("#letter3") = $("#o");
-break;
-case 16:
-$("#letter3") = $("#p");
-break;
-case 17:
-$("#letter3") = $("#q");
-break;
-case 18:
-$("#letter3") = $("#r");
-break;
-case 19:
-$("#letter3") = $("#s");
-break;
-case 20:
-$("#letter3") = $("#t");
-break;
-case 21:
-$("#letter3") = $("#u");
-break;
-case 22:
-$("#letter3") = $("#v");
-break;
-case 23:
-$("#letter3") = $("#w");
-break;
-case 24:
-$("#letter3") = $("#x");
-break;
-case 26:
-$("#letter3") = $("#y");
-break;
-case 27:
-$("#letter3") = $("#z");
-break;
-case 28:
-$("#letter3") = $("#blank");
-break;
-default:
-}
-
-
-switch (Number(fourth)) {
-case 1:
-$("#letter4") = $("#a");
-break;
-case 2:
-$("#letter4") = $("#b");
-break;
-case 3:
-$("#letter4") = $("#c");
-break;
-case 4:
-$("#letter4") = $("#d");
-break;
-case 5:
-$("#letter4") = $("#e");
-break;
-case 6:
-$("#letter4") = $("#f");
-break;
-case 7:
-$("#letter4") = $("#g");
-break;
-case 8:
-$("#letter4") = $("#h");
-break;
-case 9:
-$("#letter4") = $("#i");
-break;
-case 10:
-$("#letter4") = $("#j");
-break;
-case 11:
-$("#letter4") = $("#k");
-break;
-case 12:
-$("#letter4") = $("#l");
-break;
-case 13:
-$("#letter4") = $("#m");
-break;
-case 14:
-$("#letter4") = $("#n");
-break;
-case 15:
-$("#letter4") = $("#o");
-break;
-case 16:
-$("#letter4") = $("#p");
-break;
-case 17:
-$("#letter4") = $("#q");
-break;
-case 18:
-$("#letter4") = $("#r");
-break;
-case 19:
-$("#letter4") = $("#s");
-break;
-case 20:
-$("#letter4") = $("#t");
-break;
-case 21:
-$("#letter4") = $("#u");
-break;
-case 22:
-$("#letter4") = $("#v");
-break;
-case 23:
-$("#letter4") = $("#w");
-break;
-case 24:
-$("#letter4") = $("#x");
-break;
-case 26:
-$("#letter4") = $("#y");
-break;
-case 27:
-$("#letter4") = $("#z");
-break;
-case 28:
-$("#letter4") = $("#blank");
-break;
-default:
-}
-
-$("#letter1").show();
-$("#letter2").show();
-$("#letter3").show();
-$("#letter4").show();
-});
-</script>
 </body>
 </html>
+
