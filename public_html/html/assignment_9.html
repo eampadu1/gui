@@ -173,8 +173,19 @@ TW
   
 <p></p>
 
-<button type="button" onclick="Deal()">Deal</button><h3 id="score">Score</h3>
+<button type="button" onclick="Deal()">Deal</button>
 
+<script>
+$(document).ready(function() {
+$("#a").hide();
+$("#b").hide();
+$("#c").hide();
+$("#d").hide();
+$("#e").hide();
+$("#f").hide();
+$("#g").hide();
+});
+</script>
 <script>
 var Deal=function() {
 var letter;
@@ -238,13 +249,30 @@ default: letter = 'blank';
 return letter;
 }
 </script>
+<script>
+$("button").click(function() {
 
-<div id="rackdiv">
+$("#a").attr("src","../images/"+Deal()+".jpg");
+$("#a").show();
+$("#b").attr("src","../images/"+Deal()+".jpg");
+$("#b").show();
+$("#c").attr("src","../images/"+Deal()+".jpg");
+$("#c").show();
+$("#d").attr("src","../images/"+Deal()+".jpg");
+$("#d").show();
+$("#e").attr("src","../images/"+Deal()+".jpg");
+$("#e").show();
+$("#f").attr("src","../images/"+Deal()+".jpg");
+$("#f").show();
+$("#g").attr("src","../images/"+Deal()+".jpg");
+$("#g").show();
+});
+</script>
 
 <div id="d1" class="ui-widget-content">
 <img src="../images/a.jpg" alt="a-letter" id="a">
 </div>
- <div id="d2" class="ui-widget-content">
+<div id="d2" class="ui-widget-content">
 <img src="../images/b.jpg" alt="b-letter" id="b">
 </div>
 <div id="d3" class="ui-widget-content">
@@ -257,14 +285,13 @@ return letter;
 <img src="../images/e.jpg" alt="e-letter" id="e">
 </div>
 <div id="d6" class="ui-widget-content">
-<img src="../images/j.jpg" alt="j-letter" id="j">
+<img src="../images/f.jpg" alt="f-letter" id="f">
 </div>
 <div id="d7" class="ui-widget-content">
 <img src="../images/g.jpg" alt="h-letter" id="g">
 </div>
-<img src="../images/rack.jpg" alt="rack" id="rack">
-</div>
 
+<p id="let"></p>
 </body>
 </html>
 
