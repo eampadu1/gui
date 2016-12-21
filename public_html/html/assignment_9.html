@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <!--Copyright 2016 Ebenezer Ampadu copyright-->
+<!--jqueryui.com/draggable/-->
+<title>Assignment 9</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<link rel="stylesheet" href="../css/assign9.css">
+<script>
+# draggable {
+	width: 50px;
+height: 50px;
+padding: 0.5em;
+}
+</script>
+<script src="https://code.jquery.com/jquery-1.12.4.js">
+</script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+</script>
+<script>
+$(function() {
+		$("#d1").draggable();
+		$("#d2").draggable();
+		$("#d3").draggable();
+		$("#d4").draggable();
+		$("#d5").draggable();
+		$("#d6").draggable();
+		$("#d7").draggable();
+
+		$("#tableau").droppable({
+drop: function(event, ui) {
+$(this).addClass("ui-state-highlight").find("table").html("Dropped");
+}
+});
+		});
+</script>
+</head>
+<body>
+<div id="dv1">
+<h1 id="tit">Scrabble</h1>
+<table id="tableau" class="ui-widget-header">
+<tr>
+<td id="td1">TW</td><td id></td><td></td><td id="td2">DL</td>
+<td></td><td></td><td></td><td id="td1">TW</td>
+<td></td><td></td><td></td><td id="td2">DL</td>
+<td></td><td></td><td id="td1">TW</td>
+</tr>
+
+<tr>
+<td></td><td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td4">TL</td><td></td><td></td><td></td>
+<td id="td4">TL</td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td>
+</tr>
+
+<tr>
+<td></td><td></td><td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td3">DW</td>
+<td></td><td></td>
+</tr>
+
+</tr>
+<td id="td2">DL</td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td id="td2">DL</td>
+</tr>
+
+<tr>
+<td></td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td></td><td></td><td></td>
+<td id="td3">DW</td>
+<td></td><td></td><td></td><td></td>
+</tr>
+
+<tr>
+<td></td><td id="td4">TL</td><td></td><td></td><td></td><td id="td4">TL</td>
+<td></td><td></td><td></td><td id="td4">TL</td>
+<td></td><td></td><td></td><td id="td4">TL</td><td></td>
+</tr>
+
+<tr>
+<td></td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td></td>
+</tr>
+
+<tr>
+<td id="td1">
+TW
+</td>
+<td></td><td></td>
+<td id="td2">
+DL
+</td>
+<td></td><td></td><td></td>
+<td id="star">
+STAR
+</td>
+<td></td><td></td><td></td>
+<td id="td2">
+DL
+</td>
+<td></td><td></td>
+<td id="td1">
+TW
+</td>
+</tr>
+
+<tr>
+<td></td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td></td>
+</tr>
+
+<tr>
+<td></td><td id="td4">TL</td><td></td><td></td><td></td>
+<td id="td4">TL</td><td></td><td></td><td></td><td id="td4">TL</td>
+<td></td><td></td><td></td><td id="td4">TL</td><td></td>
+</tr>
+
+<tr>
+<td></td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td></td><td></td><td></td>
+<td id="td3">DW</td>
+<td></td><td></td><td></td><td></td>
+</tr>
+
+<tr>
+<td id="td2">DL</td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td><td></td><td id="td2">DL</td>
+</tr>
+
+<tr>
+<td></td><td></td><td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td2">DL</td><td></td><td id="td2">DL</td><td></td><td></td><td></td>
+<td id="td3">DW</td>
+<td></td><td></td>
+</tr>
+
+<tr>
+<td></td><td id="td3">DW</td><td></td><td></td><td></td>
+<td id="td4">TL</td><td></td><td></td><td></td>
+<td id="td4">TL</td><td></td><td></td><td></td>
+<td id="td3">DW</td><td></td>
+</tr>
+
+<tr>
+<td id="td1">
+TW
+</td>
+<td></td><td></td>
+<td id="td2">
+DL
+</td>
+<td></td><td></td><td></td>
+<td id="td1">
+TW
+</td>
+<td></td><td></td><td></td>
+<td id="td2">
+DL
+</td>
+<td></td><td></td>
+<td id="td1">
+TW
+</td>
+</tr>
+</table>
+  </table>
+  </div>
+<div id="dv2"
+
+<div id="d1" class="ui-widget-content">
+<img src="../images/a.jpg" alt="a-letter" id="a">
+</div>
+<div id="d2" class="ui-widget-content">
+<img src="../images/b.jpg" alt="b-letter" id="b">
+</div>
+<div id="d3" class="ui-widget-content">
+<img src="../images/c.jpg" alt="c-letter" id="c">
+</div>
+<div id="d4" class="ui-widget-content">
+<img src="../images/d.jpg" alt="d-letter" id="d">
+</div>
+<div id="d5" class="ui-widget-content">
+<img src="../images/e.jpg" alt="e-letter" id="e">
+</div>
+<div id="d6" class="ui-widget-content">
+<img src="../images/f.jpg" alt="f-letter" id="f">
+</div>
+<div id="d7" class="ui-widget-content">
+<img src="../images/g.jpg" alt="h-letter" id="g">
+</div>
+<div id="menu">
+<button id="deal" type="button">Deal</button>
+<button id="play" type="button">Play</button>
+<button id="recall" type="button">Recall</button>
+</div>
+<div id="score">score: <span id="bd"></span></div>
+</div>
+<script>
+$(document).ready(function() {
+		});
+</script>
+<script>
+var Deal=function() {
+	var letter;
+	var first = Math.floor((Math.random() * 27) + 1);
+
+	switch(first) {
+		case 1: letter = 'a';
+			break;
+		case 2: letter = 'b';
+			break;
+		case 3: letter = 'c';
+			break;
+		case 4: letter = 'd';
+			break;
+		case 5: letter = 'e';
+			break;
+		case 6: letter = 'f';
+			break;
+		case 7: letter = 'g';
+			break;
+		case 8: letter = 'h';
+			break;
+		case 9: letter = 'i';
+			break;
+		case 10: letter = 'j';
+			 break;
+		case 11: letter = 'k';
+			 break;
+		case 12: letter = 'l';
+			 break;
+		case 13: letter = 'm';
+			 break;
+		case 14: letter = 'n';
+			 break;
+		case 15: letter = 'o';
+			 break;
+		case 16: letter = 'p';
+			 break;
+		case 17: letter = 'q';
+			 break;
+		case 18: letter = 'r';
+			 break;
+		case 19: letter = 's';
+			 break;
+		case 20: letter = 't';
+			 break;
+		case 21: letter = 'u';
+			 break;
+		case 22: letter = 'v';
+			 break;
+		case 23: letter = 'w';
+			 break;
+		case 24: letter = 'x';
+			 break;
+		case 25: letter = 'y';
+			 break;
+		case 26: letter = 'z';
+			 break;
+		default: letter = 'blank';
+	}
+	return letter;
+}
+</script>
+<script>
+$("#deal").click(function() {
+		$("#a").attr("src","../images/"+Deal()+".jpg");
+		$("#a").show();
+		$("#b").attr("src","../images/"+Deal()+".jpg");
+		$("#b").show();
+		$("#c").attr("src","../images/"+Deal()+".jpg");
+		$("#c").show();
+		$("#d").attr("src","../images/"+Deal()+".jpg");
+		$("#d").show();
+		$("#e").attr("src","../images/"+Deal()+".jpg");
+		$("#e").show();
+		$("#f").attr("src","../images/"+Deal()+".jpg");
+		$("#f").show();
+		$("#g").attr("src","../images/"+Deal()+".jpg");
+		$("#g").show();
+		});
+
+		$("#recall").click(function(){
+$("#a").revert();
+$("#b").revert();
+$("#c").revert();
+$("#d").revert();
+$("#e").revert();
+$("#f").revert();
+$("#g").revert();
+		});
+</script>
+</body>
+</html>
+
+
+
