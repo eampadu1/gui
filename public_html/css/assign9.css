@@ -1,4 +1,3 @@
-
 /*
 ** Author: Ebenezer Ampadu
 ** Program: assign9.css
@@ -91,7 +90,6 @@ height: 32px;
   display: inline;
   float: right;
   padding: 2px;
-background-color: green;
   background-color: #ccff66;
   border-color: black;
 }
@@ -108,8 +106,6 @@ button {
 width: 80px;
 height: 30px;
 font-weight: bold;
-margin-left: auto;
-margin-right: auto;
 background-color: orange;
 }
 
