@@ -1,0 +1,135 @@
+
+/*
+** Author: Ebenezer Ampadu
+** Program: assign9.css
+** Description: Style sheet for Assignment 9
+*/
+
+/*Style for body element*/
+body {
+background-color: #ffffdc;
+margin-top: 0px;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*Style for table and title*/
+#dv1 {
+margin-left: 240px;
+margin-right: 5px;
+margin-top: 0px;
+float: left;
+}
+
+/*Style for right menu and tiles*/
+#dv2 {
+float: right;
+margin-top: 84px;
+margin-right: 230px;
+}
+
+/* Style for Scrabble board*/
+#tableau {
+border: 1px solid black;
+width: 550px;
+height: 550px;
+margin-left: 10px;
+}
+
+/* Style for main header*/
+h1 {
+font-weight: bold;
+text-align: center;
+font-family: Helvetica, New Times Roman;
+}
+
+/* Style for table row, table data*/
+tr, td {
+border: 1px solid black;
+color: white;
+border-color: black;
+text-align: center;
+}
+
+/*Style for triple word table data*/
+#td1 {
+background-color: red;
+color: white;
+}
+
+/* Style for double letter table data*/
+#td2 {
+background-color: cyan;
+color: white;
+}
+
+/* Style for triple letter table data*/
+#td4 {
+background-color: blue;
+}
+
+/* Style for star*/
+#star {
+background-color: pink;
+color: black;
+}
+
+/* Style for double word table data*/
+#td3 {
+background-color: #ff99cc;
+}
+
+/* Style for rack image*/
+#deal {
+margin-top: 50px;
+}
+
+/* Style for letters picked*/
+#d1, #d2, #d3, #d4, #d5, #d6, #d7 {
+height: 32px;
+  width: 32px;
+  display: inline;
+  float: right;
+  padding: 2px;
+background-color: green;
+  background-color: #ccff66;
+  border-color: black;
+}
+
+#a, #b, #c, #d, #e, #f, #g, #h, #i, #j, #k, #l, #m, #n, #o, #p, #q, #r, #s, #t, #u, #v, #w,
+#x, #y, #z, #blank {
+width: 30px;
+height: 30px;
+padding-right: 0px;
+float: right;
+}
+
+button {
+width: 80px;
+height: 30px;
+font-weight: bold;
+margin-left: auto;
+margin-right: auto;
+background-color: orange;
+}
+
+#score {
+font-size: 0.9em;
+font-weight: bold;
+background-color: yellow;
+width: 100px;
+height: 30px;
+color: black;
+margin-left: 0px;
+margin-right: 0px;
+margin-top: 50px;
+}
+
+/* Style sheet for span element*/
+#bd {
+width: 50px;
+height: 30px;
+border: 0px 1px 0px 0px;
+margin-right: 0px;
+border-color: black;
+}
