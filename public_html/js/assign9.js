@@ -4,67 +4,17 @@
 ** Description: JavaScript for Assignment 9
 */
 
-var letter;
-var Deal = function() {
 
-var first = Math.floor((Math.random() * 27) + 1);
-
-switch(Number(first)) {
-case 1: letter = 'a';
-break;
-case 2: letter = 'b';
-break;
-case 3: letter = 'c';
-break;
-case 4: letter = 'd';
-break;
-case 5: letter = 'e';
-break;
-case 6: letter = 'f';
-break;
-case 7: letter = 'g';
-break;
-case 8: letter = 'h';
-break;
-case 9: letter = 'i';
-break;
-case 10: letter = 'j';
-break;
-case 11: letter = 'k';
-break;
-case 12: letter = 'l';
-break;
-case 13: letter = 'm';
-break;
-case 14: letter = 'n';
-break;
-case 15: letter = 'o';
-break;
-case 16: letter = 'p';
-break;
-case 17: letter = 'q';
-break;
-case 18: letter = 'r';
-break;
-case 19: letter = 's';
-break;
-case 20: letter = 't';
-break;
-case 21: letter = 'u';
-break;
-case 22: letter = 'v';
-break;
-case 23: letter = 'w';
-break;
-case 24: letter = 'x';
-break;
-case 25: letter = 'y';
-break;
-case 26: letter = 'z';
-break;
-default: letter = 'blank';
-}
-
-alert('Hello');
-return letter;
+var calcWeight = {
+var blank = {number: 2; weight: 0};
+var a ={number: 9; weight: 1};
+var b ={number: 2; weight: 3};
+var c ={number: 2; weight: 3};
+var d ={number: 4; weight: 2};
+var e ={number: 12; weight: 1};
+var f ={number: 2; weight: 4};
+var g ={number: 3; weight: 2};
+var h ={number: 2; weight: 4};
+var i ={number: 9; weight: 1};
+var j ={
 }
