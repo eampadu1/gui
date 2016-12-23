@@ -272,8 +272,8 @@ var Deal=function() {
 }
 </script>
 <script>
-$("#deal").click(function() {
-		$("#a").attr("src","../images/"+Deal()+".jpg");
+	var disp = function() {
+	$("#a").attr("src","../images/"+Deal()+".jpg");
 		$("#a").show();
 		$("#b").attr("src","../images/"+Deal()+".jpg");
 		$("#b").show();
@@ -287,6 +287,9 @@ $("#deal").click(function() {
 		$("#f").show();
 		$("#g").attr("src","../images/"+Deal()+".jpg");
 		$("#g").show();
+	}
+$("#deal").click(function() {
+disp();		
 		});
 
 		$("#recall").click(function(){
