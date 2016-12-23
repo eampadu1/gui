@@ -293,7 +293,11 @@ var Deal=function() {
 	$("#submit").click(function() {
 	$("img").selectable(function() {
 	stop: function() {
-	var total = 
+	var total = $("#bd").text();
+		$(".ui-selected",this).each(function() {
+	var in = $("img").text();
+			total += in;
+		});
 	}
 	});
 	});
