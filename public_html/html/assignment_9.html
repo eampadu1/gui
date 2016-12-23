@@ -209,6 +209,11 @@ disp();
 });
 </script>
 <script>
+	$("#shuffle").click(function(){
+	disp();
+	});
+</script>
+<script>
 var Deal=function() {
 	var letter;
 	var first = Math.floor((Math.random() * 27) + 1);
@@ -290,10 +295,6 @@ var Deal=function() {
 	}	
 </script>
 <script>
-	$("#shuffle").click(function() {
-disp();
-	});
-	
 	$("#submit").click(function() {
 	$("img").selectable(function() {
 	stop: function() {
