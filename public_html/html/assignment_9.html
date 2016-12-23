@@ -177,25 +177,25 @@ TW
 <div id="dv2">
 
 <div id="d1" class="ui-widget-content">
-<img src="../images/a.jpg" alt="a-letter" id="aa">
+<img src="../images/a.jpg" alt="a-letter" id="aa" class="ui-widget-content">
 </div>
 <div id="d2" class="ui-widget-content">
-<img src="../images/b.jpg" alt="b-letter" id="bb">
+<img src="../images/b.jpg" alt="b-letter" id="bb" class="ui-widget-content">
 </div>
 <div id="d3" class="ui-widget-content">
-<img src="../images/c.jpg" alt="c-letter" id="cc">
+<img src="../images/c.jpg" alt="c-letter" id="cc" class="ui-widget-content">
 </div>
 <div id="d4" class="ui-widget-content">
-<img src="../images/d.jpg" alt="d-letter" id="dd">
+<img src="../images/d.jpg" alt="d-letter" id="dd" class="ui-widget-content">
 </div>
 <div id="d5" class="ui-widget-content">
-<img src="../images/e.jpg" alt="e-letter" id="ee">
+<img src="../images/e.jpg" alt="e-letter" id="ee" class="ui-widget-content">
 </div>
 <div id="d6" class="ui-widget-content">
-<img src="../images/f.jpg" alt="f-letter" id="ff">
+<img src="../images/f.jpg" alt="f-letter" id="ff" class="ui-widget-content">
 </div>
 <div id="d7" class="ui-widget-content">
-<img src="../images/g.jpg" alt="h-letter" id="gg">
+<img src="../images/g.jpg" alt="h-letter" id="gg" class="ui-widget-content">
 </div>
 <div id="menu">
 <button id="shuffle" type="button">Shuffle</button>
@@ -289,6 +289,14 @@ var Deal=function() {
 		$("#gg").attr("src","../images/"+Deal()+".jpg");
 		$("#gg").show();
 	}
+	
+	$("#submit").click(function() {
+	$("img").selectable(function() {
+	stop: function() {
+	var total = 
+	}
+	});
+	});
 </script>
 </body>
 </html>
