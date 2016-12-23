@@ -198,11 +198,11 @@ TW
 <img src="../images/g.jpg" alt="h-letter" id="g">
 </div>
 <div id="menu">
-<button id="deal" type="button">Deal</button>
+<button id="shuffle" type="button">Deal</button>
 <button id="play" type="button">Play</button>
 <button id="recall" type="button">Recall</button>
 </div>
-<div id="score">score: <span id="bd"></span></div>
+<div id="score">score: <span id="bd">0</span></div>
 </div>
 <script>
 $(document).ready(function() {
@@ -289,19 +289,6 @@ var Deal=function() {
 		$("#g").attr("src","../images/"+Deal()+".jpg");
 		$("#g").show();
 	}
-$("#deal").click(function() {
-	
-		});
-
-		$("#recall").click(function(){
-$("#a").revert();
-$("#b").revert();
-$("#c").revert();
-$("#d").revert();
-$("#e").revert();
-$("#f").revert();
-$("#g").revert();
-		});
 </script>
 </body>
 </html>
