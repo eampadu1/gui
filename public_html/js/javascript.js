@@ -11,9 +11,10 @@ document.getElementById("year").innerHTML = datum.getFullYear();
 
 var main_form = ()=>{
 alert("Thank you for submitting your form. Have a nice day!");
-};
 document.getElementById("name").innerHTML = " ";
 document.getElementById("email").innerHTML = " ";
 document.getElementById("telephone").innerHTML = " "; 
+};
+
 
 
