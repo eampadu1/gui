@@ -67,10 +67,11 @@ items[i] = mTable.insertRow(i);
   }
  }
 
- document.getElementById("t_row_start").value = 0;
-document.getElementById("t_row_end").value = 0;
+ document.getElementById("t_row_start").value =0;
+ document.getElementById("t_row_end").value = 0;
 document.getElementById("t_col_start").value = 0;
 document.getElementById("t_col_end").value = 0;
+
 
 return;
 };
