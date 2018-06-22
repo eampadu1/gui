@@ -45,7 +45,10 @@ items[i] = mTable.insertRow(i);
   parseInt(col_start-1));
 }
  }
-
+rfirst.value = 0;
+ rend.value = 0;
+ cfirst.value = 0;
+ cend.value = 0;
 return;
 };
 
