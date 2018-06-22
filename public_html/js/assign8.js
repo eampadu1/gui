@@ -46,10 +46,10 @@ items[i] = mTable.insertRow(i);
 }
  }
 
-col_start = 0;
-col_end = 0;
-row_start = 0;
-row_end = 0;
+rfirst = null;
+rend = null;
+cfirst = null;
+cend = null;
 return;
 };
 
