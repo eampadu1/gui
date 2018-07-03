@@ -84,10 +84,10 @@ items[i] = mTable.insertRow(i);
   parseInt(col_start-1));
 }
  }
-document.getElementById("t_row_start").innerHTML = "";
-document.getElementById("t_row_end").innerHTML = "";
-document.getElementById("t_col_start").innerHTML = "";
-document.getElementById("t_col_end").innerHTML = "";
+document.getElementById("t_row_start").innerHTML = 0;
+document.getElementById("t_row_end").innerHTML = 0;
+document.getElementById("t_col_start").innerHTML = 0;
+document.getElementById("t_col_end").innerHTML = 0;
 
 return;
 };
