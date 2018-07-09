@@ -82,10 +82,15 @@ items[i] = mTable.insertRow(i);
   items[i][0].innerHTML = parseInt(i) + parseInt(row_start-1);
   items[i][j].innerHTML = (parseInt(i) + parseInt(row_start-1)) * (parseInt(j) + 
   parseInt(col_start-1));
-}
  }
+}
 
-return;
+document.getElementById("t_row_start").innerHTML = 0;
+document.getElementById("t_row_end").innerHTML = 0;
+document.getElementById("t_col_start").innerHTML = 0;
+document.getElementById("t_col_end").innerHTML = 0;
+
+ return;
 };
 
 /* End of Function*/
